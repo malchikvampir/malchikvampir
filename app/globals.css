@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Базовый переход */
+* {
+    @apply transition-colors duration-300;
+}
+
+/* Body animation */
+body {
+    @apply bg-white text-neutral-900;
+    transition:
+        background-color 300ms ease,
+        color 300ms ease,
+        opacity 200ms ease,
+        transform 200ms ease;
+}
+
+html.dark body {
+    @apply bg-neutral-950 text-neutral-100;
+}
