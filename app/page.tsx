@@ -59,7 +59,7 @@ export default function HomePage() {
                     <img
                         src="images/Pasha_Abramov_HERE.png"
                         alt="Decorative"
-                        className="w-full h-full rounded-2xl shadow-2xl"
+                        className="w-full h-full"
                     />
                 </motion.div>
 
@@ -175,7 +175,7 @@ export default function HomePage() {
                     <img
                         src="images/Pasha_Abramov_HERE.png"
                         alt="Decorative"
-                        className="w-full h-full rounded-2xl shadow-2xl"
+                        className="w-full h-full"
                     />
                 </motion.div>
 
