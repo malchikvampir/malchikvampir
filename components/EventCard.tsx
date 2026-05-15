@@ -16,10 +16,10 @@ export default function EventCard({
     link,
 }: EventCardProps) {
 
-    const march8 = new Date("2026-03-08")
-    const date = new Date(eventDate)
+    const formattedCurrentDate = new Date();
+    const formattedEventDate = new Date(eventDate);
 
-    const isExpired = date > march8
+    const isExpired = formattedCurrentDate > formattedEventDate;
 
     return (
         <div className="w-full h-105 relative rounded-2xl overflow-hidden">

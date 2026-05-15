@@ -44,7 +44,7 @@ export default function HomePage() {
                 {/* Мобилка Картинка */}
                 <motion.div
                     initial={{ y: 250, opacity: 0, rotate: 8 }}
-                    animate={animate ? { y: 0, opacity: 1, rotate: 3 } : {}}
+                    animate={animate ? { y: -50, opacity: 1, rotate: 3 } : {}}
                     transition={spring}
                     className="
                         absolute
@@ -65,16 +65,16 @@ export default function HomePage() {
 
                 {/* Мобилка контейнер */}
                 <div className="mb-8 md:hidden">
-                    <h1 className="text-4xl font-bold md:text-6xl mb-12">
+                    <h1 className="text-4xl font-bold md:text-6xl mb-2">
                         Привет, я Паша
                     </h1>
                     <p className="text-lg text-neutral-400 dark:text-neutral-400">
-                        Я создаю современную небольшую комедию!
+                        И мальчик, и вампир!
                     </p>
                 </div>
                 <motion.div
                     animate={{
-                        paddingTop: animate ? 350 : 0,
+                        paddingTop: animate ? 360 : 0,
                     }}
                     transition={spring}
                     className="lg:pl-0 md:hidden"
@@ -118,8 +118,9 @@ export default function HomePage() {
                                     <ul className="grid grid-cols-2 gap-3 text-xl cursor-default list-disc list-inside marker:text-red-500">
                                         {[
                                             'Стендап',
+                                            'Прикол',
                                             'Клоунада',
-                                            'Анекдоты',
+                                            'Жонгляж',
                                         ].map((tech) => (
                                             <motion.li
                                                 key={tech}
@@ -148,8 +149,8 @@ export default function HomePage() {
                         </h2>
 
                         <p className="text-neutral-400 dark:text-neutral-400 leading-relaxed">
-                            68 лет, вампир, юмором занимаюсь второй год. <br />
-                            Всё время до этого изучал живопись в Соронто.
+                            68 лет, вампир, стендап-комик, энтузиаст драматической клоунады. <br />
+                            Хочу путешествовать и изучать живопись
                         </p>
                     </section>
 
@@ -196,7 +197,7 @@ export default function HomePage() {
 
                         <div className="space-y-10 max-w-2xl">
                             <p className="text-lg text-neutral-400 dark:text-neutral-400">
-                                Я создаю современную небольшую комедию!
+                                И мальчик, и вампир!
                             </p>{/* GOLD STACK CARD */}
                             <motion.div
                                 whileHover={{ scale: 1.02 }}
@@ -237,8 +238,6 @@ export default function HomePage() {
                                             'Импровизация',
                                             'Клоунада',
                                             'Жонглирование',
-                                            'Анекдоты',
-                                            'оооооо Конферанс',
                                         ].map((tech) => (
                                             <motion.li
                                                 key={tech}
@@ -267,8 +266,8 @@ export default function HomePage() {
                         </h2>
 
                         <p className="text-neutral-400 dark:text-neutral-400 leading-relaxed">
-                            68 лет, вампир, юмором занимаюсь второй год. <br />
-                            Всё время до этого изучал живопись в Соронто.
+                            68 лет, вампир, стендап-комик, энтузиаст драматической клоунады. <br />
+                            Хочу путешествовать и изучать живопись
                         </p>
                     </section>
 
@@ -277,7 +276,7 @@ export default function HomePage() {
 
             {/* SECTION 4 */}
             <section className="-mt-16">
-                <h2 className="text-2xl font-semibold mb-6">
+                <h2 className="text-2xl font-semibold mb-4">
                     Афиша мероприятий
                 </h2>
 
@@ -293,17 +292,6 @@ export default function HomePage() {
                 </div>
 
             </section>
-
-            {/* SECTION 3 */}
-            <section className="w-full px-6 flex justify-center items-center bg-neutral-950 mb-32">
-                <h2 className="max-w-5xl text-center text-white font-black tracking-wide leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                    Все баловались, а я сказал —
-                    <span className="inline-block pt-4 text-red-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl italic -rotate-12">
-                        хватит!
-                    </span>
-                </h2>
-            </section>
-
         </main>
     );
 }
