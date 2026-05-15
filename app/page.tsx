@@ -282,6 +282,17 @@ export default function HomePage() {
 
                 <div className="w-full py-6">
                     <EventCard
+                        title="Проверка материала"
+                        imageSrc="images/afisha-26-may.png"
+                        dateInfo="26 мая с 21:00 по 22:15"
+                        placeInfo="Колдовское поле, Яблонский сад"
+                        eventDate="2026-05-26"
+                        link="https://malchik-vampir.timepad.ru/event/3982365/"
+                    />
+                </div>
+                <div className="w-full py-6">
+                    <EventCard
+
                         title="Небольшая комедия"
                         imageSrc="images/alt-afisha-8-mart.png"
                         dateInfo="8 марта с 19:00 по 20:30"
