@@ -22,3 +22,10 @@ body {
 html.dark body {
     @apply bg-neutral-950 text-neutral-100;
 }
+
+html p {
+    @apply text-neutral-500
+}
+html.dark p {
+    @apply text-neutral-300;
+}

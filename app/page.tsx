@@ -68,7 +68,7 @@ export default function HomePage() {
                     <h1 className="text-4xl font-bold md:text-6xl mb-2">
                         Привет, я Паша
                     </h1>
-                    <p className="text-lg text-neutral-400 dark:text-neutral-400">
+                    <p className="text-lg">
                         И мальчик, и вампир!
                     </p>
                 </div>
@@ -148,7 +148,7 @@ export default function HomePage() {
                             Обо мне
                         </h2>
 
-                        <p className="text-neutral-400 dark:text-neutral-400 leading-relaxed">
+                        <p className="leading-relaxed">
                             68 лет, вампир, стендап-комик, энтузиаст драматической клоунады. <br />
                             Хочу путешествовать и изучать живопись
                         </p>
@@ -196,7 +196,7 @@ export default function HomePage() {
                         </h1>
 
                         <div className="space-y-10 max-w-2xl">
-                            <p className="text-lg text-neutral-400 dark:text-neutral-400">
+                            <p className="text-lg">
                                 И мальчик, и вампир!
                             </p>{/* GOLD STACK CARD */}
                             <motion.div
@@ -265,7 +265,7 @@ export default function HomePage() {
                             Обо мне
                         </h2>
 
-                        <p className="text-neutral-400 dark:text-neutral-400 leading-relaxed">
+                        <p className="leading-relaxed">
                             68 лет, вампир, стендап-комик, энтузиаст драматической клоунады. <br />
                             Хочу путешествовать и изучать живопись
                         </p>
