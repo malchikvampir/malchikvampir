@@ -279,11 +279,10 @@ export default function HomePage() {
                 <h2 className="text-2xl font-semibold mb-4">
                     Афиша мероприятий
                 </h2>
-
                 <div className="w-full py-6">
                     <EventCard
                         title="Проверка материала"
-                        imageSrc="images/afisha-26-may.png"
+                        imageSrc="images/afisha-may-26.jpg"
                         dateInfo="26 мая с 21:00 по 22:15"
                         placeInfo="Колдовское поле, Яблонский сад"
                         eventDate="2026-05-26"
@@ -301,7 +300,6 @@ export default function HomePage() {
                         link="https://afisha.nethouse.ru/event/nebolsaia-vosmimartovskaia-komediia"
                     />
                 </div>
-
             </section>
         </main>
     );

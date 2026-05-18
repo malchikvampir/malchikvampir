@@ -4,7 +4,7 @@ import { Header } from '../components/Header';
 
 export const metadata = {
     title: 'Сайт Мальчика-Вампира',
-    description: 'Портфолио стендап-комика',
+    description: 'Портфолио озорного стендап-комика',
 };
 
 export default function RootLayout({
