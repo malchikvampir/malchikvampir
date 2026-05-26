@@ -19,7 +19,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
 
           script: |
-            cd ~/apps/app
+            cd /var/www/malchikvampir
 
             git fetch origin
             git reset --hard origin/main
