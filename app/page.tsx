@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, Transition } from 'framer-motion';
 import EventCard from '../components/EventCard';
 
 export default function HomePage() {
@@ -30,7 +30,7 @@ export default function HomePage() {
         };
     }, []);
 
-    const spring = {
+    const spring: Transition = {
         type: 'spring',
         stiffness: 120,
         damping: 18,

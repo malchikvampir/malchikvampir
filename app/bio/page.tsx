@@ -18,7 +18,7 @@ export default function AboutPage() {
                     <div className="shadow-md rounded-2xl p-5 border hover:bg-neutral-400/7">
                         <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Первое несмелое ха-ха</h3>
                         <p>
-                            Я никогда — ну, или типа того — не знал ничего о Комедии, пока я впервые не увидел номера Ширвиндта и Державина. <br />
+                            Я ничего не знал о Комедии, пока не увидел номера Ширвиндта и Державина. <br />
                             Я влюбился в Комедию и пошёл выступать в ближайший бар.
                         </p>
                     </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
                         <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Стендап-лунатик</h3>
                         <p>
                             Комедия забрала у меня <span className="text-red-500">всё</span>. <br />
-                            Любую мысль я стремился превратить в юмор. Это было заточение.<br />
+                            Любую мысль я превращал в юмор. Это было заточение.<br />
                             <span className="italic">Я повторял одни и те же шутки пьяным мотоциклистам в баре каждый день</span>
                         </p>
                     </div>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                     <div className="shadow-md rounded-2xl p-5 border hover:bg-neutral-400/7">
                         <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Клоунская Академия Которого</h3>
                         <p>
-                            Cжимая в руке последние приколы, я поступил в <a href="https://kotorogo.ru/show/" className="text-blue-300 underline hover:text-blue-800 hover:no-underline">театр</a>.<br />
+                            C последними приколами я упал на порог <a href="https://kotorogo.ru/show/" className="text-blue-300 underline hover:text-blue-800 hover:no-underline">театра имени Которого</a>.<br />
                             Меня стали приводить в порядок: я стал отличать смешное от серьёзного и жонглировать. <br />
                             Но вдруг выяснилось страшное. Оказалось, что я вампир.
                         </p>
