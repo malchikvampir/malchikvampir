@@ -24,7 +24,7 @@ jobs:
             git fetch origin
             git reset --hard origin/main
 
-            npm ci
+            npm install
             npm run build
 
             pm2 reload ecosystem.config.js --update-env
