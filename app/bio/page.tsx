@@ -11,65 +11,16 @@ export default function AboutPage() {
     
     return (
         <div className="max-w-6xl mx-auto px-6 py-10 leading-relaxed">
-            <h1 className="font-[--font-cormorant-garamond] text-4xl font-semibold  mb-12">Исповедь Мальчика-Вампира</h1>
-
             <section className="mb-10 w-full flex">
-                <div className="space-y-4 w-5/6">
-                    <div className="shadow-md rounded-2xl p-5 border hover:bg-neutral-400/7">
-                        <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Первое несмелое ха-ха</h3>
-                        <p>
-                            Я ничего не знал о Комедии, пока не увидел номера Ширвиндта и Державина. <br />
-                            Я влюбился в Комедию и пошёл выступать в ближайший бар.
-                        </p>
-                    </div>
-
-                    <div className="shadow-md rounded-2xl p-5 border hover:bg-neutral-400/7">
-                        <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Стендап-лунатик</h3>
-                        <p>
-                            Комедия забрала у меня <span className="text-red-500">всё</span>. <br />
-                            Любую мысль я превращал в юмор. Это было заточение.<br />
-                            <span className="italic">Я повторял одни и те же шутки пьяным мотоциклистам в баре каждый день</span>
-                        </p>
-                    </div>
-
-                    <div className="shadow-md rounded-2xl p-5 border hover:bg-neutral-400/7">
-                        <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Клоунская Академия Которого</h3>
-                        <p>
-                            C последними приколами я упал на порог <a href="https://kotorogo.ru/show/" className="text-blue-300 underline hover:text-blue-800 hover:no-underline">театра имени Которого</a>.<br />
-                            Меня стали приводить в порядок: я стал отличать смешное от серьёзного и жонглировать. <br />
-                            Но вдруг выяснилось страшное. Оказалось, что я вампир.
-                        </p>
-                    </div>
-
-                    <div className="shadow-md rounded-2xl p-5 border hover:bg-neutral-400/7">
-                        <h3 className="font-[--font-cormorant-garamond] text-3xl italic text-red-500 mb-4">Меня уже не остановить</h3>
-                        <p>
-                            Теперь я живу в Ржевском лесопарке и нападаю на спортсменов и грибников. В моей душе нет сострадания, 
-                            я безжалостный монстр, одержимый жаждой <span className="text-red-500">крови</span>💔
-                            <br /><br />
-                            Приходите на мои выступления!
-                        </p>
-                    </div>
+                <div className="space-y-4 md:w-4/6">
+                    <BiographyCards />
                 </div>
                 
-                <div className="w-1/6 h-full">
-                    <Canvas className="w-1/6 min-h-175" >
+                <div className="hidden md:block md:w-2/6 h-full ">
+                    <Canvas className="md:w-1/6 mt-240" >
                         <RocketScene running={running} paused={paused} />
                     </Canvas>
-                    <div className="left-3 space-y-2">
-                        <button onClick={() => { setRunning(true); setPaused(false); }} className="bg-white px-3 py-1 rounded">
-                            Start
-                        </button>
-
-                        <button onClick={() => setPaused(p => !p)} className="bg-white px-3 py-1 rounded">
-                            Pause
-                        </button>
-                    </div>
                 </div>
-            </section>
-            
-            <section>
-                <BiographyCards />
             </section>
 
             <section>

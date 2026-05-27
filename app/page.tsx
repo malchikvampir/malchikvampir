@@ -281,6 +281,16 @@ export default function HomePage() {
                 </h2>
                 <div className="w-full py-6">
                     <EventCard
+                        title="Тупое кабаре"
+                        imageSrc="images/photo_2026-05-27.jpg"
+                        dateInfo="31 мая с 20:00 по 22:15"
+                        placeInfo="Театр имени Которого Нельзя Называть"
+                        eventDate="2026-05-31"
+                        link="https://afisha.nethouse.ru/event/tupoe-protivozakonnoe-kabare-2"
+                    />
+                </div>
+                <div className="w-full py-6">
+                    <EventCard
                         title="Проверка материала"
                         imageSrc="images/afisha-may-26.jpg"
                         dateInfo="26 мая с 21:00 по 22:15"

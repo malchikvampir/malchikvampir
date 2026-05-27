@@ -4,21 +4,21 @@ export default function BiographyCards() {
             id: "01",
             title: "Начало пути",
             subtitle: "Первое несмелое ха-ха",
-            text: "Я никогда — ну, или типа того — не знал ничего о Комедии, пока я впервые не увидел номера Ширвиндта и Державина. Я влюбился в Комедию и пошёл выступать в ближайший бар.",
+            text: `Я ничего не знал о Комедии, пока не увидел номера Ширвиндта и Державина. Я влюбился в Комедию и пошёл выступать в ближайший бар`,
             dark: true,
         },
         {
             id: "02",
             title: "Поиск себя",
             subtitle: "Стендап-лунатик",
-            text: `Комедия забрала у меня всё. Любую мысль я стремился превратить в юмор. Это было заточение. Я повторял одни и те же шутки пьяным мотоциклистам в баре каждый день`,
+            text: `Комедия забрала у меня всё. Любую мысль я превращал в юмор. Это было заточение: я повторял шутки пьяным мотоциклистам каждый день`,
         },
         {
             id: "03",
             title: "Главное дело",
-            subtitle: "Клоунская Академия Которого",
-            text: `Cжимая в руке последние приколы, я поступил в театр. 
-                            Меня стали приводить в порядок: я стал отличать смешное от серьёзного и жонглировать. 
+            subtitle: "Клоунская Академия",
+            text: `Изможденный я упал на порог театра имени Которого. 
+                            Здесь я стал отличать смешное от серьёзного и жонглировать. 
                             Но вдруг выяснилось страшное. Оказалось, что я вампир.`,
             accent: true,
         },
@@ -32,8 +32,8 @@ export default function BiographyCards() {
     ];
 
     return (
-        <section className="w-full py-24">
-            <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
+        <section className="w-full pb-24">
+            <div className="mx-auto grid max-w-7xl gap-6">
                 {cards.map((card) => (
                     <article
                         key={card.id}
@@ -51,17 +51,17 @@ export default function BiographyCards() {
                     >
                         {/* Glow */}
                         <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                            <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
+                            <div className="absolute -right-20 -top-20 h-40 w-80 rounded-full bg-white/5 blur-3xl" />
                         </div>
 
                         {/* Top */}
-                        <div className="mb-12 flex items-start justify-between">
+                        <div className="mb-4 flex items-start justify-between">
                             <div>
                                 <span
                                     className={`
                                         text-sm uppercase tracking-[0.25em]
                                         ${card.dark || card.accent
-                                            ? "text-white/40"
+                                        ? "text-neutral-400"
                                             : "text-black/40"
                                         }
                                     `}
@@ -69,16 +69,16 @@ export default function BiographyCards() {
                                     {card.subtitle}
                                 </span>
 
-                                <h3 className="mt-4 text-4xl font-light leading-tight">
+                                <h3 className="mt-2 text-2xl md:text-4xl font-light leading-tight">
                                     {card.title}
                                 </h3>
                             </div>
 
                             <span
                                 className={`
-                                    text-5xl font-extralight
+                                    hidden md:block text-5xl font-extralight
                                     ${card.dark || card.accent
-                                        ? "text-white/20"
+                                        ? "text-neutral-400"
                                         : "text-black/20"
                                     }
                                 `}
@@ -90,7 +90,7 @@ export default function BiographyCards() {
                         {/* Divider */}
                         <div
                             className={`
-                                mb-8 h-px w-24
+                                mb-4 h-px w-24
                                 ${card.dark || card.accent
                                     ? "bg-white/10"
                                     : "bg-black/10"
@@ -99,22 +99,22 @@ export default function BiographyCards() {
                         />
 
                         {/* Text */}
-                        <p
+                        <div
                             className={`
-                                max-w-md text-base leading-relaxed
+                                max-w-xl text-base leading-relaxed
                                 ${card.dark || card.accent
-                                    ? "text-white/70"
+                                ? "text-neutral-400"
                                     : "text-black/70"
                                 }
                             `}
                         >
                             {card.text}
-                        </p>
+                        </div>
 
                         {/* Arrow */}
                         <button
                             className={`
-                                mt-10 flex h-14 w-14 items-center justify-center
+                                hidden mt-10 h-14 w-14 items-center justify-center
                                 rounded-full border transition-all duration-300
                                 group-hover:translate-x-1
                                 ${card.dark || card.accent
