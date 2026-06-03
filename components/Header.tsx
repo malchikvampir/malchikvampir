@@ -8,7 +8,7 @@ export function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="sticky top-0 z-50 border-b border-neutral-800 backdrop-blur transition-colors duration-300 dark:border-neutral-800 dark:bg-neutral-950/80 ">
+        <header className="sticky top-0 z-50 border-b border-neutral-800 backdrop-blur transition-colors duration-300">
             <div className="mx-auto flex items-center justify-between max-w-6xl px-6 py-4">
                 <div className="flex items-center">
                     <Link

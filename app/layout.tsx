@@ -16,7 +16,6 @@ export default function RootLayout({
         <html lang="ru">
             <body className="bg-neutral-950 text-neutral-100 antialiased">
                 <Header />
-                {/* Overlay для мягкой анимации */}
                 <div
                     id="theme-overlay"
                     className="pointer-events-none fixed inset-0 z-999 opacity-0 transition-opacity duration-300"
